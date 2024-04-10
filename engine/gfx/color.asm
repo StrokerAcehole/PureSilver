@@ -75,6 +75,13 @@ Unused_CheckShininess:
 	and a
 	ret
 
+InitPartyMenuPalettes:
+	ld hl, PalPacket_PartyMenu + 1
+	call CopyFourPalettes
+	call InitPartyMenuOBPals
+	call WipeAttrmap
+	ret
+
 SGB_ApplyCreditsPals::
 	push de
 	push bc
@@ -97,14 +104,6 @@ SGB_ApplyCreditsPals::
 	ld hl, BlkPacket_AllPal0
 	call PushSGBPals
 	ret
-
-InitPartyMenuPalettes:
-	call CheckCGB
-	jr nz, .cgb
-	ld hl, BlkPacket_PartyMenu
-	ld de, wSGBPals + 1
-	ld bc, 6 palettes
-	jp CopyBytes
 
 .cgb
 	ld hl, PalPacket_PartyMenu + 1
