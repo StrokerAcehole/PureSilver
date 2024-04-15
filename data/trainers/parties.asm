@@ -1,14 +1,16 @@
-INCLUDE "data/trainers/party_pointers.asm"
-
-Trainers:
 ; Trainer data structure:
-; - db "NAME@", TRAINERTYPE_* constant
+; - db "NAME@", TRAINERTYPE_* constants |ed together
 ; - 1 to 6 Pokémon:
-;    * for TRAINERTYPE_NORMAL:     db level, species
-;    * for TRAINERTYPE_MOVES:      db level, species, 4 moves
-;    * for TRAINERTYPE_ITEM:       db level, species, item
-;    * for TRAINERTYPE_ITEM_MOVES: db level, species, item, 4 moves
+;    * in all cases:              db level, species
+;    * with TRAINERTYPE_NICKNAME: db "NICKNAME@"
+;    * with TRAINERTYPE_DVS:      db atk|def dv, spd|spc dv
+;    * with TRAINERTYPE_STAT_EXP: dw hp, atk, def, spd, spc
+;    * with TRAINERTYPE_ITEM:     db item
+;    * with TRAINERTYPE_MOVES:    db move 1, move 2, move 3, move 4
+;    (TRAINERTYPE_ITEM_MOVES is just TRAINERTYPE_ITEM | TRAINERTYPE_MOVES)
 ; - db -1 ; end
+
+SECTION "Enemy Trainer Parties 1", ROMX
 
 FalknerGroup:
 	; FALKNER (1)
@@ -75,18 +77,39 @@ ClairGroup:
 
 Rival1Group:
 	; RIVAL1 (1)
-	db "?@", TRAINERTYPE_NORMAL
-	db  5, CHIKORITA
+	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM
+	db  4, RATTATA
+	        db $bb, $bb ; atk|def, spd|spc
+			dw $0008, $0008, $0008, $0008, $0008
+			db NO_ITEM
+	db  7, CHIKORITA
+			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db BERRY
 	db -1 ; end
 
 	; RIVAL1 (2)
-	db "?@", TRAINERTYPE_NORMAL
-	db  5, CYNDAQUIL
+	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM
+	db  4, RATTATA
+	        db $bb, $bb ; atk|def, spd|spc
+			dw $0008, $0008, $0008, $0008, $0008
+			db NO_ITEM
+	db  7, CYNDAQUIL
+			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db BERRY
 	db -1 ; end
 
 	; RIVAL1 (3)
-	db "?@", TRAINERTYPE_NORMAL
-	db  5, TOTODILE
+	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM
+	db  4, RATTATA
+	        db $bb, $bb ; atk|def, spd|spc
+			dw $0008, $0008, $0008, $0008, $0008
+			db NO_ITEM
+	db  7, TOTODILE
+			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db BERRY
 	db -1 ; end
 
 	; RIVAL1 (4)

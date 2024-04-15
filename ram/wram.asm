@@ -2807,13 +2807,15 @@ wDudeNumBalls:: db
 wDudeBalls:: ds 2 * 4 + 1
 ENDU
 
+wOtherTrainerType:: db
+wTrainerGroupBank:: db
+
 wPokemonDataEnd::
 wGameDataEnd::
 
 
 SECTION "Stack", WRAMX
 
-	ds 2
 wStackBottom::
 	ds $fc
 wStackTop::
