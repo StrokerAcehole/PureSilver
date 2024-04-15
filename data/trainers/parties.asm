@@ -14,10 +14,22 @@ SECTION "Enemy Trainer Parties 1", ROMX
 
 FalknerGroup:
 	; FALKNER (1)
-	db "FALKNER@", TRAINERTYPE_MOVES
-	db  7, PIDGEY,     TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
-	db  9, PIDGEOTTO,  TACKLE, MUD_SLAP, GUST, NO_MOVE
-	db -1 ; end
+	db "FALKNER@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM | TRAINERTYPE_MOVES
+	db 11, PIDGEY
+			db $bb, $bb ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db NO_ITEM
+			db MUD_SLAP, QUICK_ATTACK, GUST, SAND_ATTACK
+	db 12, HOOTHOOT
+			db $bb, $bb ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db NO_ITEM
+			db TACKLE, HYPNOSIS, CONFUSION, GROWL
+	db 13, PIDGEOTTO
+			db $cc, $cc ; atk|def, spd|spc
+			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
+			db BERRY
+			db MUD_SLAP, QUICK_ATTACK, GUST, WHIRLWIND
 
 WhitneyGroup:
 	; WHITNEY (1)
@@ -360,14 +372,15 @@ ErikaGroup:
 
 YoungsterGroup:
 	; YOUNGSTER (1)
-	db "JOEY@", TRAINERTYPE_NORMAL
-	db  4, RATTATA
+	db "JOEY@", TRAINERTYPE_DVS
+	db  6, RATTATA
+			db PERFECT_DV, PERFECT_DV
 	db -1 ; end
 
 	; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
-	db  2, PIDGEY
-	db  4, RATTATA
+	db  3, PIDGEY
+	db  5, RATTATA
 	db -1 ; end
 
 	; YOUNGSTER (3)
