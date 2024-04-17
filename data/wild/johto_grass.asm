@@ -8,54 +8,54 @@ JohtoGrassWildMons:
 	db 3, RATTATA
 	db 4, RATTATA
 	db 5, RATTATA
-	db 3, RATTATA
+	db 3, BELLSPROUT
+	db 5, BELLSPROUT
 	db 6, RATTATA
-	db 5, RATTATA
-	db 5, RATTATA
+	db 6, BELLSPROUT
 	; day
 	db 3, RATTATA
 	db 4, RATTATA
 	db 5, RATTATA
-	db 3, RATTATA
+	db 3, BELLSPROUT
+	db 5, BELLSPROUT
 	db 6, RATTATA
-	db 5, RATTATA
-	db 5, RATTATA
+	db 6, BELLSPROUT
 	; nite
 	db 3, GASTLY
 	db 4, GASTLY
 	db 5, GASTLY
-	db 3, RATTATA
+	db 5, RATTATA
 	db 6, GASTLY
-	db 5, RATTATA
-	db 5, RATTATA
+	db 6, RATTATA
+	db 6, BELLSPROUT
 	end_grass_wildmons
 
 	def_grass_wildmons SPROUT_TOWER_3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
-	; morn
+    ; morn
 	db 3, RATTATA
 	db 4, RATTATA
 	db 5, RATTATA
-	db 3, RATTATA
+	db 3, BELLSPROUT
+	db 5, BELLSPROUT
 	db 6, RATTATA
-	db 5, RATTATA
-	db 5, RATTATA
+	db 6, BELLSPROUT
 	; day
 	db 3, RATTATA
 	db 4, RATTATA
 	db 5, RATTATA
-	db 3, RATTATA
+	db 3, BELLSPROUT
+	db 5, BELLSPROUT
 	db 6, RATTATA
-	db 5, RATTATA
-	db 5, RATTATA
+	db 6, BELLSPROUT
 	; nite
 	db 3, GASTLY
 	db 4, GASTLY
 	db 5, GASTLY
-	db 3, RATTATA
+	db 5, RATTATA
 	db 6, GASTLY
-	db 5, RATTATA
-	db 5, RATTATA
+	db 6, RATTATA
+	db 6, BELLSPROUT
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_2F
@@ -1602,29 +1602,29 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	IF DEF(_GOLD)
 	; morn
-	db 3, LEDYBA
+	db 5, LEDYBA
 	db 3, CATERPIE
 	db 4, CATERPIE
 	db 4, PIDGEY
 	db 3, WEEDLE
-	db 4, SUNKERN
-	db 4, PIDGEY
+	db 4, HOPPIP
+	db 5, PIDGEY
 	; day
 	db 3, PIDGEY
 	db 3, CATERPIE
 	db 4, CATERPIE
 	db 4, PIDGEY
 	db 3, WEEDLE
-	db 4, SUNKERN
+	db 4, HOPPIP
 	db 5, SUNKERN
 	; nite
 	db 3, SPINARAK
 	db 3, HOOTHOOT
-	db 4, POLIWAG
+	db 5, POLIWAG
 	db 4, HOOTHOOT
-	db 3, ZUBAT
+	db 5, ZUBAT
 	db 4, HOOTHOOT
-	db 4, HOOTHOOT
+	db 5, HOOTHOOT
 	ELIF DEF(_SILVER)
 	; morn
 		db 3, LEDYBA
