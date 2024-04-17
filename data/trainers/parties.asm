@@ -2875,21 +2875,20 @@ ExecutiveFGroup:
 SageGroup:
 	; SAGE (1)
 	db "CHOW@", TRAINERTYPE_NORMAL
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
+	db  5, BELLSPROUT
+	db  6, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (2)
 	db "NICO@", TRAINERTYPE_NORMAL
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
+	db  5, BELLSPROUT
+	db  6, GEODUDE
+	db  6, ODDISH
 	db -1 ; end
 
 	; SAGE (3)
 	db "JIN@", TRAINERTYPE_NORMAL
-	db  6, BELLSPROUT
+	db  7, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (4)
@@ -2901,34 +2900,43 @@ SageGroup:
 	; SAGE (5)
 	db "JEFFREY@", TRAINERTYPE_NORMAL
 	db 22, HAUNTER
+	db 21, VULPIX
 	db -1 ; end
 
 	; SAGE (6)
 	db "PING@", TRAINERTYPE_NORMAL
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
+	db 17, GASTLY
+	db 17, HOOTHOOT
+	db 18, GASTLY
+	db 18, NOCTOWL
 	db -1 ; end
+
 
 	; SAGE (7)
 	db "EDMOND@", TRAINERTYPE_NORMAL
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
-	db  3, BELLSPROUT
+	db  4, GEODUDE
+	db  4, HOOTHOOT
+	db  4, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (8)
 	db "NEAL@", TRAINERTYPE_NORMAL
-	db  6, BELLSPROUT
+	db  6, HOOTHOOT
+	db  7, GROWLITHE
+	db  6, SUNKERN
 	db -1 ; end
 
 	; SAGE (9)
-	db "LI@", TRAINERTYPE_NORMAL
-	db  7, BELLSPROUT
-	db  7, BELLSPROUT
-	db 10, HOOTHOOT
+	db "LI@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP
+	db  8, BELLSPROUT
+			db $bb, $bb
+			dw $0002, $0002, $0002, $0002, $0002
+	db  9, HOOTHOOT
+			db $bb, $bb
+			dw $0002, $0002, $0002, $0002, $0002
+	db 10, WEEPINBELL
+			db $cc, $cc
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 MediumGroup:
