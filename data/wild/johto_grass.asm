@@ -1577,25 +1577,25 @@ JohtoGrassWildMons:
 	db 3, SENTRET
 	db 3, PIDGEY
 	db 2, SENTRET
-	db 4, RATTATA
-	db 4, SUNKERN
-	db 4, PIDGEY
+	db 2, RATTATA
+	db 3, SUNKERN
+	db 3, PIDGEY
 	; day
 	db 2, PIDGEY
 	db 3, SENTRET
 	db 3, PIDGEY
 	db 2, SENTRET
-	db 4, RATTATA
-	db 4, SUNKERN
-	db 4, PIDGEY
+	db 2, RATTATA
+	db 3, SUNKERN
+	db 3, PIDGEY
 	; nite
 	db 2, HOOTHOOT
 	db 3, RATTATA
 	db 3, HOOTHOOT
 	db 2, RATTATA
-	db 4, RATTATA
-	db 4, HOOTHOOT
-	db 4, HOOTHOOT
+	db 2, RATTATA
+	db 3, HOOTHOOT
+	db 3, HOOTHOOT
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_30
@@ -1613,7 +1613,7 @@ JohtoGrassWildMons:
 	db 3, PIDGEY
 	db 3, CATERPIE
 	db 4, CATERPIE
-	db 4, PIDGEY
+	db 5, PIDGEY
 	db 3, WEEDLE
 	db 4, HOPPIP
 	db 5, SUNKERN
@@ -1627,29 +1627,29 @@ JohtoGrassWildMons:
 	db 5, HOOTHOOT
 	ELIF DEF(_SILVER)
 	; morn
-		db 3, LEDYBA
+	db 5, LEDYBA
 	db 3, CATERPIE
 	db 4, CATERPIE
 	db 4, PIDGEY
 	db 3, WEEDLE
-	db 4, SUNKERN
-	db 4, PIDGEY
+	db 4, HOPPIP
+	db 5, PIDGEY
 	; day
 	db 3, PIDGEY
 	db 3, CATERPIE
 	db 4, CATERPIE
-	db 4, PIDGEY
+	db 5, PIDGEY
 	db 3, WEEDLE
-	db 4, SUNKERN
+	db 4, HOPPIP
 	db 5, SUNKERN
 	; nite
 	db 3, SPINARAK
 	db 3, HOOTHOOT
-	db 4, POLIWAG
+	db 5, POLIWAG
 	db 4, HOOTHOOT
-	db 3, ZUBAT
+	db 5, ZUBAT
 	db 4, HOOTHOOT
-	db 4, HOOTHOOT
+	db 5, HOOTHOOT
 	ENDC
 	end_grass_wildmons
 

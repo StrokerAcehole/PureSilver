@@ -2107,11 +2107,12 @@ CyndaquilEvosAttacks:
 	db 1, TACKLE
 	db 1, LEER
 	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 19, QUICK_ATTACK
-	db 27, FLAME_WHEEL
-	db 36, SWIFT
-	db 46, FLAMETHROWER
+	db 11, EMBER
+	db 15, QUICK_ATTACK
+	db 21, FLAME_WHEEL
+	db 28, SUBMISSION
+	db 31, SWIFT
+	db 36, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 QuilavaEvosAttacks:
@@ -2119,27 +2120,27 @@ QuilavaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
-	db 1, SMOKESCREEN
-	db 6, SMOKESCREEN
+	db 8, SMOKESCREEN
 	db 12, EMBER
-	db 21, QUICK_ATTACK
-	db 31, FLAME_WHEEL
-	db 42, SWIFT
-	db 54, FLAMETHROWER
+	db 17, QUICK_ATTACK
+	db 23, FLAME_WHEEL
+	db 32, SUBMISSION
+	db 46, SWIFT
+	db 42, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 TyphlosionEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
-	db 1, SMOKESCREEN
-	db 1, EMBER
 	db 6, SMOKESCREEN
 	db 12, EMBER
-	db 21, QUICK_ATTACK
-	db 31, FLAME_WHEEL
-	db 45, SWIFT
-	db 60, FLAMETHROWER
+	db 17, QUICK_ATTACK
+	db 23, FLAME_WHEEL
+	db 32, SUBMISSION
+	db 38, SWIFT
+	db 45, FLAMETHROWER
+	db 60, THRASH
 	db 0 ; no more level-up moves
 
 TotodileEvosAttacks:
@@ -2216,13 +2217,16 @@ HoothootEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 6, FORESIGHT
-	db 11, PECK
-	db 16, HYPNOSIS
-	db 22, REFLECT
-	db 28, TAKE_DOWN
-	db 34, CONFUSION
-	db 48, DREAM_EATER
+	db 1, FORESIGHT
+	db 5, HYPNOSIS
+	db 8, GUST
+	db 11, CONFUSION
+	db 16, NIGHT_SHADE
+	db 19, WING_ATTACK
+	db 25, TAKE_DOWN
+	db 28, REFLECT
+	db 34, DRILL_PECK
+	db 45, DREAM_EATER
 	db 0 ; no more level-up moves
 
 NoctowlEvosAttacks:
