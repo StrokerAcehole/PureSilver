@@ -177,6 +177,7 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const CONNIE3 ; unused
 	const DANA2
 	const DANA3
+	const JANET
 
 	trainerclass JANINE ; 1a
 	const JANINE1
