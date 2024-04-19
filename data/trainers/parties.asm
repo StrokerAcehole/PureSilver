@@ -24,7 +24,7 @@ FalknerGroup:
 			db $bb, $bb ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db NO_ITEM
-			db TACKLE, HYPNOSIS, CONFUSION, GROWL
+			db GUST, HYPNOSIS, CONFUSION, GROWL
 	db 13, PIDGEOTTO
 			db $cc, $cc ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
@@ -33,17 +33,52 @@ FalknerGroup:
 
 WhitneyGroup:
 	; WHITNEY (1)
-	db "WHITNEY@", TRAINERTYPE_MOVES
-	db 18, CLEFAIRY,   DOUBLESLAP, MIMIC, ENCORE, METRONOME
-	db 20, MILTANK,    ROLLOUT, ATTRACT, STOMP, MILK_DRINK
+	db "WHITNEY@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM | TRAINERTYPE_MOVES
+	db 19, CLEFABLE
+			db $bb, $bb ; atk|def, spd|spc
+			dw $9411, $9411, $9411, $9411, $9411
+			db PINK_BOW
+			db DOUBLESLAP, MINIMIZE, ATTRACT, METRONOME
+	db 21, MILTANK
+			db $bb, $bb ; atk|def, spd|spc
+			dw $9411, $9411, $9411, $9411, $9411
+			db GOLD_BERRY
+			db ROLLOUT, DEFENSE_CURL, STOMP, MILK_DRINK
+	db 19, TEDDIURSA
+			db $bb, $bb ; atk|def, spd|spc
+			dw $9411, $9411, $9411, $9411, $9411
+			db NO_ITEM
+			db SCRATCH, ATTRACT, LICK, FAINT_ATTACK
+	db 21, TAUROS
+			db $cc, $cc ; atk|def, spd|spc
+			dw $9411, $9411, $9411, $9411, $9411
+			db BERSERK_GENE
+			db ICY_WIND, STOMP, HORN_DRILL, PURSUIT
 	db -1 ; end
 
 BugsyGroup:
 	; BUGSY (1)
-	db "BUGSY@", TRAINERTYPE_MOVES
-	db 14, METAPOD,    TACKLE, STRING_SHOT, HARDEN, NO_MOVE
-	db 14, KAKUNA,     POISON_STING, STRING_SHOT, HARDEN, NO_MOVE
-	db 16, SCYTHER,    QUICK_ATTACK, LEER, FURY_CUTTER, NO_MOVE
+	db "BUGSY@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM | TRAINERTYPE_MOVES
+	db 15, PINECO  
+			db $bb, $bb ; atk|def, spd|spc
+			dw $0008, $0008, $0008, $0008, $0008
+			db QUICK_CLAW
+			db SPIKES, SELFDESTRUCT, PIN_MISSILE, TAKE_DOWN
+	db 15, ARIADOS
+			db $bb, $bb ; atk|def, spd|spc
+			dw $0008, $0008, $0008, $0008, $0008
+			db NO_ITEM
+			db PIN_MISSILE, ACID, CONSTRICT, SCARY_FACE
+	db 16, PINSIR
+			db $bb, $bb ; atk|def, spd|spc
+			dw $0008, $0008, $0008, $0008, $0008
+			db NO_ITEM
+			db HARDEN, VICEGRIP, SEISMIC_TOSS, FURY_CUTTER
+	db 17, SCYTHER
+			db $cc, $cc ; atk|def, spd|spc
+			dw $0008, $0008, $0008, $0008, $0008
+			db FOCUS_BAND
+			db FURY_CUTTER, FOCUS_ENERGY, WING_ATTACK, PURSUIT
 	db -1 ; end
 
 MortyGroup:

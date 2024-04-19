@@ -1602,54 +1602,54 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	IF DEF(_GOLD)
 	; morn
-	db 5, LEDYBA
+	db 4, LEDYBA
+	db 3, CATERPIE
+	db 4, CATERPIE
+	db 3, PIDGEY
+	db 3, WEEDLE
+	db 4, HOPPIP
+	db 4, PIDGEY
+	; day
+	db 3, PIDGEY
 	db 3, CATERPIE
 	db 4, CATERPIE
 	db 4, PIDGEY
 	db 3, WEEDLE
 	db 4, HOPPIP
-	db 5, PIDGEY
-	; day
-	db 3, PIDGEY
-	db 3, CATERPIE
-	db 4, CATERPIE
-	db 5, PIDGEY
-	db 3, WEEDLE
-	db 4, HOPPIP
-	db 5, SUNKERN
+	db 4, SUNKERN
 	; nite
 	db 3, SPINARAK
 	db 3, HOOTHOOT
-	db 5, POLIWAG
+	db 4, POLIWAG
+	db 3, HOOTHOOT
+	db 4, ZUBAT
 	db 4, HOOTHOOT
-	db 5, ZUBAT
 	db 4, HOOTHOOT
-	db 5, HOOTHOOT
 	ELIF DEF(_SILVER)
 	; morn
-	db 5, LEDYBA
+	db 4, LEDYBA
+	db 3, CATERPIE
+	db 4, CATERPIE
+	db 3, PIDGEY
+	db 3, WEEDLE
+	db 4, HOPPIP
+	db 4, PIDGEY
+	; day
+	db 3, PIDGEY
 	db 3, CATERPIE
 	db 4, CATERPIE
 	db 4, PIDGEY
 	db 3, WEEDLE
 	db 4, HOPPIP
-	db 5, PIDGEY
-	; day
-	db 3, PIDGEY
-	db 3, CATERPIE
-	db 4, CATERPIE
-	db 5, PIDGEY
-	db 3, WEEDLE
-	db 4, HOPPIP
-	db 5, SUNKERN
+	db 4, SUNKERN
 	; nite
 	db 3, SPINARAK
 	db 3, HOOTHOOT
-	db 5, POLIWAG
+	db 4, POLIWAG
+	db 3, HOOTHOOT
+	db 4, ZUBAT
 	db 4, HOOTHOOT
-	db 5, ZUBAT
 	db 4, HOOTHOOT
-	db 5, HOOTHOOT
 	ENDC
 	end_grass_wildmons
 
