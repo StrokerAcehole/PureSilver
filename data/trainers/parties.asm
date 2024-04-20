@@ -408,14 +408,14 @@ ErikaGroup:
 YoungsterGroup:
 	; YOUNGSTER (1)
 	db "JOEY@", TRAINERTYPE_DVS
-	db  6, RATTATA
+	db  5, RATTATA
 			db PERFECT_DV, PERFECT_DV
 	db -1 ; end
 
 	; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
-	db  3, PIDGEY
-	db  5, RATTATA
+	db  2, PIDGEY
+	db  4, RATTATA
 	db -1 ; end
 
 	; YOUNGSTER (3)
@@ -591,13 +591,16 @@ SchoolboyGroup:
 
 BirdKeeperGroup:
 	; BIRD_KEEPER (1)
-	db "ROD@", TRAINERTYPE_NORMAL
-	db  7, PIDGEY
-	db  7, PIDGEY
+	db "ROD@", TRAINERTYPE_MOVES
+	db 9, PIDGEY
+			db MUD_SLAP, TACKLE, GUST, SAND_ATTACK
+	db 9, DODUO
+			db PECK, FURY_ATTACK, GROWL, PURSUIT
 	db -1 ; end
 
 	; BIRD_KEEPER (2)
 	db "ABE@", TRAINERTYPE_NORMAL
+	db  9, PIDGEY
 	db  9, SPEAROW
 	db -1 ; end
 
@@ -800,8 +803,8 @@ LassGroup:
 
 	; LASS (16) 
 	db "JANET@", TRAINERTYPE_MOVES
-	db 7, METAPOD,  TACKLE, HARDEN, STRING_SHOT, NO_MOVE
-	db 7, PHANPY,   TACKLE, GROWL, MUD_SLAP, NO_MOVE
+	db 5, METAPOD,  TACKLE, HARDEN, STRING_SHOT, NO_MOVE
+	db 6, PHANPY,   TACKLE, GROWL, MUD_SLAP, NO_MOVE
 	db -1 ; end
 
 JanineGroup:
@@ -1485,8 +1488,8 @@ SabrinaGroup:
 BugCatcherGroup:
 	; BUG_CATCHER (1)
 	db "DON@", TRAINERTYPE_NORMAL
-	db  4, CATERPIE
-	db  4, CATERPIE
+	db  3, CATERPIE
+	db  3, CATERPIE
 	db  4, WEEDLE
 	db -1 ; end
 
@@ -2916,15 +2919,15 @@ ExecutiveFGroup:
 SageGroup:
 	; SAGE (1)
 	db "CHOW@", TRAINERTYPE_NORMAL
-	db  5, BELLSPROUT
-	db  6, BELLSPROUT
+	db  3, BELLSPROUT
+	db  4, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (2)
 	db "NICO@", TRAINERTYPE_NORMAL
-	db  5, BELLSPROUT
-	db  6, GEODUDE
-	db  6, ODDISH
+	db  3, BELLSPROUT
+	db  5, GEODUDE
+	db  4, ODDISH
 	db -1 ; end
 
 	; SAGE (3)
@@ -2969,10 +2972,10 @@ SageGroup:
 
 	; SAGE (9)
 	db "LI@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP
-	db  8, BELLSPROUT
+	db  7, BELLSPROUT
 			db $bb, $bb
 			dw $0002, $0002, $0002, $0002, $0002
-	db  9, HOOTHOOT
+	db  8, HOOTHOOT
 			db $bb, $bb
 			dw $0002, $0002, $0002, $0002, $0002
 	db 10, WEEPINBELL
