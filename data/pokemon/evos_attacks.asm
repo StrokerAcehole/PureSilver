@@ -231,6 +231,7 @@ PidgeyEvosAttacks:
 	db 25, SWIFT
 	db 29, AGILITY
 	db 33, WING_ATTACK
+	db 37, ROOST
 	db 41, DRILL_PECK
 	db 47, MIRROR_MOVE
 	db 0 ; no more level-up moves
@@ -239,29 +240,31 @@ PidgeottoEvosAttacks:
 	db EVOLVE_LEVEL, 36, PIDGEOT
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, SAND_ATTACK
-	db 1, GUST
-	db 5, SAND_ATTACK
-	db 9, GUST
-	db 15, QUICK_ATTACK
-	db 23, WHIRLWIND
-	db 33, WING_ATTACK
-	db 43, AGILITY
+	db 5, GUST
+	db 9, MUD_SLAP
+	db 13, QUICK_ATTACK
+	db 17, WHIRLWIND
+	db 25, SWIFT
+	db 32, AGILITY
+	db 37, WING_ATTACK
+	db 42, ROOST
+	db 47, DRILL_PECK
 	db 55, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
 PidgeotEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, SAND_ATTACK
-	db 1, GUST
-	db 1, QUICK_ATTACK
-	db 5, SAND_ATTACK
+	db 5, MUD_SLAP
 	db 9, GUST
-	db 15, QUICK_ATTACK
-	db 23, WHIRLWIND
-	db 33, WING_ATTACK
-	db 46, AGILITY
+	db 13, QUICK_ATTACK
+	db 17, WHIRLWIND
+	db 27, SWIFT
+	db 32, AGILITY
+	db 38, WING_ATTACK
+	db 44, ROOST
+	db 50, DRILL_PECK
+	db 56, STEEL_WING
 	db 61, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
