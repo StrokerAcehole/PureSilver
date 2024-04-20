@@ -19,17 +19,18 @@ FalknerGroup:
 			db $bb, $bb ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db NO_ITEM
-			db MUD_SLAP, QUICK_ATTACK, GUST, SAND_ATTACK
+			db MUD_SLAP, QUICK_ATTACK, GUST, ROOST
 	db 12, HOOTHOOT
 			db $bb, $bb ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db NO_ITEM
-			db GUST, HYPNOSIS, CONFUSION, GROWL
+			db GUST, HYPNOSIS, CONFUSION, ROOST
 	db 13, PIDGEOTTO
 			db $cc, $cc ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db BERRY
-			db MUD_SLAP, QUICK_ATTACK, GUST, WHIRLWIND
+			db MUD_SLAP, QUICK_ATTACK, GUST, ROOST
+db -1 ; end
 
 WhitneyGroup:
 	; WHITNEY (1)
@@ -593,7 +594,7 @@ BirdKeeperGroup:
 	; BIRD_KEEPER (1)
 	db "ROD@", TRAINERTYPE_MOVES
 	db 9, PIDGEY
-			db MUD_SLAP, TACKLE, GUST, SAND_ATTACK
+			db MUD_SLAP, ROOST, GUST, SAND_ATTACK
 	db 9, DODUO
 			db PECK, FURY_ATTACK, GROWL, PURSUIT
 	db -1 ; end

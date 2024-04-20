@@ -252,15 +252,14 @@ MoveDescriptions::
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
+	dw RoostDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFCDescription
 	dw MoveFDDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 	assert_table_length $100
 
-MoveFCDescription:
 MoveFDDescription:
 MoveFEDescription:
 MoveFFDescription:
@@ -686,6 +685,10 @@ DoubleTeamDescription:
 RecoverDescription:
 	db   "Restores HP by 1/2"
 	next "the max HP.@"
+
+RoostDescription:
+	db   "Lands to restore"
+	next "1/2 the max HP.@"
 
 HardenDescription:
 	db   "Raises the user's"
