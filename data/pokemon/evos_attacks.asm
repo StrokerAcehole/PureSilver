@@ -1276,16 +1276,17 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
-	db EVOLVE_TRADE, METAL_COAT, STEELIX
+	db EVOLVE_ITEM, METAL_COAT, STEELIX
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
-	db 10, BIND
-	db 14, ROCK_THROW
-	db 23, HARDEN
-	db 27, RAGE
+	db 10, ROCK_THROW
+	db 14, HARDEN
+	db 23, RAGE
+	db 27, BIND
 	db 36, SANDSTORM
 	db 40, SLAM
+	db 49, ROCK_SLIDE
 	db 0 ; no more level-up moves
 
 DrowzeeEvosAttacks:
