@@ -39,7 +39,6 @@ TrainerYoungsterJoey:
 	trainer YOUNGSTER, JOEY1, EVENT_BEAT_YOUNGSTER_JOEY, YoungsterJoey1SeenText, YoungsterJoey1BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	checkevent EVENT_JOEY_READY_FOR_REMATCH
 	iftrue .Rematch
@@ -122,7 +121,6 @@ TrainerYoungsterMikey:
 	trainer YOUNGSTER, MIKEY, EVENT_BEAT_YOUNGSTER_MIKEY, YoungsterMikeySeenText, YoungsterMikeyBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	writetext YoungsterMikeyAfterText
 	waitbutton
@@ -133,7 +131,6 @@ TrainerBugCatcherDon:
 	trainer BUG_CATCHER, DON, EVENT_BEAT_BUG_CATCHER_DON, BugCatcherDonSeenText, BugCatcherDonBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	writetext BugCatcherDonAfterText
 	waitbutton

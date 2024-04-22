@@ -27,7 +27,6 @@ TrainerBugCatcherWade1:
 	trainer BUG_CATCHER, WADE1, EVENT_BEAT_BUG_CATCHER_WADE, BugCatcherWade1SeenText, BugCatcherWade1BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	checkevent EVENT_WADE_READY_FOR_REMATCH
 	iftrue .WadeRematch
@@ -171,7 +170,6 @@ Route31CooltrainerFScript:
 	trainer LASS, JANET, EVENT_BEAT_JANET, JanetSeenText, JanetBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	writetext JanetAfterText
 	waitbutton

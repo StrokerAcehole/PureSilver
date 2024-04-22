@@ -27,11 +27,6 @@ CherrygroveCityGuideGent:
 	faceplayer
 	opentext
 	writetext GuideGentIntroText
-	yesorno
-	iffalse .No
-	sjump .Yes
-.Yes:
-	writetext GuideGentTourText1
 	waitbutton
 	closetext
 	playmusic MUSIC_SHOW_ME_AROUND
@@ -97,6 +92,11 @@ CherrygroveCityGuideGent:
 	waitbutton
 	closetext
 	end
+	
+Movement_ToGuide:
+	step LEFT
+	turn_head UP
+	step_end
 
 CherrygroveRivalSceneSouth:
 	moveobject CHERRYGROVECITY_RIVAL, 39, 7
