@@ -1,6 +1,6 @@
 	db CORSOLA ; 222
 
-	db  55,  55,  85,  35,  65,  85
+	db  60,  75, 105,  35, 115, 105
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, ROCK ; type
