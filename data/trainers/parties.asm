@@ -421,13 +421,16 @@ YoungsterGroup:
 
 	; YOUNGSTER (3)
 	db "ALBERT@", TRAINERTYPE_NORMAL
-	db  6, RATTATA
+	db  8, RATTATA
 	db  8, ZUBAT
 	db -1 ; end
 
 	; YOUNGSTER (4)
-	db "GORDON@", TRAINERTYPE_NORMAL
+	db "GORDON@", TRAINERTYPE_STAT_EXP
 	db 10, WOOPER
+			dw $0002, $0002, $0002, $0002, $0002
+	db 11, GROWLITHE
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; YOUNGSTER (5)
@@ -670,10 +673,15 @@ BirdKeeperGroup:
 	db -1 ; end
 
 	; BIRD_KEEPER (13)
-	db "PETER@", TRAINERTYPE_NORMAL
-	db  6, PIDGEY
-	db  6, PIDGEY
-	db  8, SPEAROW
+	db "PETER@", TRAINERTYPE_STAT_EXP
+	db 8, SPEAROW
+			dw $0002, $0002, $0002, $0002, $0002
+	db 8, PIDGEY
+			dw $0002, $0002, $0002, $0002, $0002
+	db 9, NATU
+			dw $0002, $0002, $0002, $0002, $0002
+	db 9, HOOTHOOT
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; BIRD_KEEPER (14)
@@ -1159,8 +1167,9 @@ BeautyGroup:
 
 PokemaniacGroup:
 	; POKEMANIAC (1)
-	db "LARRY@", TRAINERTYPE_NORMAL
-	db 10, SLOWPOKE
+	db "LARRY@", TRAINERTYPE_STAT_EXP
+	db 12, SLOWPOKE
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; POKEMANIAC (2)
@@ -1232,16 +1241,27 @@ PokemaniacGroup:
 	db -1 ; end
 
 GruntMGroup:
-	; GRUNTM (1)
-	db "GRUNT@", TRAINERTYPE_NORMAL
+	; GRUNTM (1) - Slowpoke Well
+	db "PROTON@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
+	db 13, MURKROW
+			dw $0008, $0008, $0008, $0008, $0008
+			db PECK, FAINT_ATTACK, HAZE, MEAN_LOOK
 	db 14, KOFFING
+			dw $0008, $0008, $0008, $0008, $0008
+			db SLUDGE, SMOKESCREEN, POISON_GAS, SELFDESTRUCT
+	db 14, ARBOK
+			dw $0008, $0008, $0008, $0008, $0008
+			db ACID, BITE, GLARE, WRAP
 	db -1 ; end
 
-	; GRUNTM (2)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db  7, RATTATA
-	db  9, ZUBAT
-	db  9, ZUBAT
+	; GRUNTM (2) - Slowpoke Well
+	db "GRUNT@", TRAINERTYPE_STAT_EXP
+	db 11, VENONAT
+			dw $0002, $0002, $0002, $0002, $0002
+	db 11, RATTATA
+			dw $0002, $0002, $0002, $0002, $0002
+	db 11, SLOWPOKE
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; GRUNTM (3)
@@ -1404,10 +1424,12 @@ GruntMGroup:
 	db 19, RATICATE
 	db -1 ; end
 
-	; GRUNTM (29)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db  9, RATTATA
-	db  9, RATTATA
+	; GRUNTM (29) - Slowpoke Well
+	db "GRUNT@", TRAINERTYPE_STAT_EXP
+	db 10, RATTATA
+			dw $0002, $0002, $0002, $0002, $0002
+	db 11, GASTLY
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; GRUNTM (30)
@@ -1585,8 +1607,11 @@ FisherGroup:
 	db -1 ; end
 
 	; FISHER (2)
-	db "RALPH@", TRAINERTYPE_NORMAL
-	db 10, GOLDEEN
+	db "RALPH@", TRAINERTYPE_STAT_EXP
+	db 10, CHINCHOU
+			dw $0002, $0002, $0002, $0002, $0002
+	db 10, TOTODILE
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; FISHER (3)
@@ -1602,9 +1627,11 @@ FisherGroup:
 	db -1 ; end
 
 	; FISHER (5)
-	db "HENRY@", TRAINERTYPE_NORMAL
-	db  8, POLIWAG
-	db  8, POLIWAG
+	db "HENRY@", TRAINERTYPE_STAT_EXP
+	db  9, POLIWAG
+			dw $0002, $0002, $0002, $0002, $0002
+	db  9, QWILFISH
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; FISHER (6)
@@ -2195,17 +2222,24 @@ GuitaristGroup:
 	db -1 ; end
 
 HikerGroup:
-	; HIKER (1)
-	db "ANTHONY@", TRAINERTYPE_NORMAL
-	db 16, GEODUDE
-	db 18, MACHAMP
-	db -1 ; end
+	; HIKER (1) - Rematch Trainer #1
+	db "ANTHONY@", TRAINERTYPE_STAT_EXP
+	db 12, LARVITAR
+			dw $0002, $0002, $0002, $0002, $0002
+	db 12, GEODUDE
+			dw $0002, $0002, $0002, $0002, $0002
+	db 12, MACHOP
+			dw $0002, $0002, $0002, $0002, $0002
+    db -1 ; end
 
 	; HIKER (2)
-	db "RUSSELL@", TRAINERTYPE_NORMAL
-	db  4, GEODUDE
-	db  6, GEODUDE
-	db  8, GEODUDE
+	db "RUSSELL@", TRAINERTYPE_STAT_EXP
+	db 8, DIGLETT
+			dw $0002, $0002, $0002, $0002, $0002
+	db 8, CUBONE
+			dw $0002, $0002, $0002, $0002, $0002
+	db 9, GEODUDE
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; HIKER (3)
@@ -2310,6 +2344,7 @@ HikerGroup:
 	; HIKER (18)
 	db "DANIEL@", TRAINERTYPE_NORMAL
 	db 11, ONIX
+	db 11, MACHOP
 	db -1 ; end
 
 	; HIKER (19)
@@ -2438,9 +2473,13 @@ FirebreatherGroup:
 	db -1 ; end
 
 	; FIREBREATHER (5)
-	db "BILL@", TRAINERTYPE_NORMAL
-	db  6, KOFFING
-	db  6, KOFFING
+	db "BILL@", TRAINERTYPE_STAT_EXP
+	db 11, MAGBY
+			dw $0002, $0002, $0002, $0002, $0002
+	db 11, KOFFING
+			dw $0002, $0002, $0002, $0002, $0002
+	db 12, CYNDAQUIL
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; FIREBREATHER (6)
@@ -2450,8 +2489,11 @@ FirebreatherGroup:
 	db -1 ; end
 
 	; FIREBREATHER (7)
-	db "RAY@", TRAINERTYPE_NORMAL
-	db  9, VULPIX
+	db "RAY@", TRAINERTYPE_STAT_EXP
+	db 11, VULPIX
+			dw $0002, $0002, $0002, $0002, $0002
+	db 12, CHARMANDER
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; FIREBREATHER (8)
@@ -2665,6 +2707,7 @@ PicnickerGroup:
 	; PICNICKER (1)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db  9, NIDORAN_F
+	db  9, NIDORAN_M
 	db -1 ; end
 
 	; PICNICKER (2)
@@ -2721,6 +2764,7 @@ PicnickerGroup:
 	; PICNICKER (11)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 15, WEEPINBELL
+	db 15, NIDORINO
 	db 15, NIDORINA
 	db -1 ; end
 
@@ -3232,24 +3276,72 @@ PokefanFGroup:
 
 RedGroup:
 	; RED (1)
-	db "RED@", TRAINERTYPE_MOVES
-	db 81, PIKACHU,    CHARM, QUICK_ATTACK, THUNDERBOLT, THUNDER
-	db 73, ESPEON,     MUD_SLAP, REFLECT, SWIFT, PSYCHIC_M
-	db 75, SNORLAX,    AMNESIA, SNORE, REST, BODY_SLAM
-	db 77, VENUSAUR,   SUNNY_DAY, GIGA_DRAIN, SYNTHESIS, SOLARBEAM
-	db 77, CHARIZARD,  FLAMETHROWER, WING_ATTACK, SLASH, FIRE_SPIN
-	db 77, BLASTOISE,  RAIN_DANCE, SURF, BLIZZARD, WHIRLPOOL
+	db "RED@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM | TRAINERTYPE_MOVES
+	db 90, PIKACHU
+			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
+			dw $00FD, $00FD, $00FD, $00FD, $00FD
+			db LIGHT_BALL
+			db SING, SURF, THUNDERBOLT, SUBSTITUTE
+	db 85, SNORLAX
+			db $bf, PERFECT_DV ; atk|def, spd|spc
+			dw $00FD, $00FD, $00FD, $00FD, $00FD
+			db MYSTERYBERRY
+			db MEGA_KICK, SLEEP_TALK, REST, EARTHQUAKE
+	db 84, ESPEON
+			db $ad, PERFECT_DV ; atk|def, spd|spc
+			dw $00FD, $00FD, $00FD, $00FD, $00FD
+			db TWISTEDSPOON
+			db PSYCHIC_M, MORNING_SUN, GROWTH, HIDDEN_POWER
+	db 87, GYARADOS
+			db $fb, PERFECT_DV ; atk|def, spd|spc
+			dw $00FD, $00FD, $00FD, $00FD, $00FD
+			db QUICK_CLAW
+			db DRAGON_RAGE, HYDRO_PUMP, EARTHQUAKE, CRUNCH
+	db 87, VENUSAUR
+			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
+			dw $00FD, $00FD, $00FD, $00FD, $00FD
+			db MIRACLE_SEED
+			db SUNNY_DAY, GIGA_DRAIN, SYNTHESIS, SOLARBEAM
+	db 88, CHARIZARD
+			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
+			dw $00FD, $00FD, $00FD, $00FD, $00FD
+			db CHARCOAL
+			db FIRE_BLAST, BELLY_DRUM, EARTHQUAKE, DRAGONBREATH
 	db -1 ; end
 
 BlueGroup:
 	; BLUE (1)
-	db "BLUE@", TRAINERTYPE_MOVES
-	db 56, PIDGEOT,    QUICK_ATTACK, WHIRLWIND, WING_ATTACK, MIRROR_MOVE
-	db 54, ALAKAZAM,   DISABLE, RECOVER, PSYCHIC_M, REFLECT
-	db 56, RHYDON,     FURY_ATTACK, SANDSTORM, ROCK_SLIDE, EARTHQUAKE
-	db 58, GYARADOS,   TWISTER, HYDRO_PUMP, RAIN_DANCE, HYPER_BEAM
-	db 58, EXEGGUTOR,  SUNNY_DAY, LEECH_SEED, EGG_BOMB, SOLARBEAM
-	db 58, ARCANINE,   ROAR, SWIFT, FLAMETHROWER, EXTREMESPEED
+	db "BLUE@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM | TRAINERTYPE_MOVES
+	db 68, EXEGGUTOR
+			db $bf, PERFECT_DV ; atk|def, spd|spc
+			dw $50C3, $50C3, $50C3, $50C3, $50C3
+			db LEFTOVERS
+			db BARRAGE, STUN_SPORE, PSYCHIC_M, LEECH_SEED
+	db 69, RHYDON
+			db PERFECT_DV, $bf ; atk|def, spd|spc
+			dw $50C3, $50C3, $50C3, $50C3, $50C3
+			db FOCUS_BAND
+			db EARTHQUAKE, ROCK_SLIDE, MEGAHORN, ZAP_CANNON
+	db 67, SCYTHER
+			db PERFECT_DV, $fb ; atk|def, spd|spc
+			dw $50C3, $50C3, $50C3, $50C3, $50C3
+			db SILVERPOWDER
+			db CUT, BATON_PASS, SWORDS_DANCE, RAZOR_WIND
+	db 67, ALAKAZAM
+			db PERFECT_DV, $bf ; atk|def, spd|spc
+			dw $50C3, $50C3, $50C3, $50C3, $50C3
+			db TWISTEDSPOON
+			db PSYCHIC_M, REFLECT, RECOVER, THUNDERPUNCH
+	db 68, ARCANINE
+			db $fb, PERFECT_DV ; atk|def, spd|spc
+			dw $50C3, $50C3, $50C3, $50C3, $50C3
+			db CHARCOAL
+			db CURSE, STRENGTH, FIRE_BLAST, EXTREMESPEED
+	db 70, BLASTOISE
+			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
+			dw $00FD, $00FD, $00FD, $00FD, $00FD
+			db MYSTIC_WATER
+			db EARTHQUAKE, HYDRO_PUMP, REST, SKULL_BASH
 	db -1 ; end
 
 OfficerGroup:
@@ -3265,10 +3357,12 @@ OfficerGroup:
 	db -1 ; end
 
 GruntFGroup:
-	; GRUNTF (1)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db  9, ZUBAT
-	db 11, EKANS
+	; GRUNTF (1) - Slowpoke Well
+	db "GRUNT@", TRAINERTYPE_STAT_EXP
+	db 11, ZUBAT
+			dw $0002, $0002, $0002, $0002, $0002
+	db 12, EKANS
+			dw $0002, $0002, $0002, $0002, $0002
 	db -1 ; end
 
 	; GRUNTF (2)
