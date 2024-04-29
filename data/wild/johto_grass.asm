@@ -1711,55 +1711,55 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_32
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	IF DEF(_GOLD)
-	; morn
-	db 6, BELLSPROUT
-	db 4, RATTATA
+		; morn
+	db 5, EKANS
+	db 7, NIDORAN_F
+	db 5, WOOPER
+	db 5, HOPPIP
+	db 7, PIDGEY
+	db 7, NIDORAN_M
 	db 6, MAREEP
-	db 6, HOPPIP
-	db 6, RATTATA
-	db 4, WOOPER
-	db 4, ZUBAT
 	; day
-	db 6, BELLSPROUT
-	db 4, RATTATA
+	db 5, EKANS
+	db 7, NIDORAN_F
+	db 5, WOOPER
+	db 5, MAREEP
+	db 7, PIDGEY
+	db 7, NIDORAN_M
 	db 6, MAREEP
-	db 6, HOPPIP
-	db 6, RATTATA
-	db 8, RATTATA
-	db 8, RATTATA
 	; nite
-	db 6, WOOPER
-	db 4, RATTATA
-	db 6, BELLSPROUT
-	db 6, MAREEP
-	db 8, WOOPER
-	db 8, ZUBAT
-	db 8, ZUBAT
+	db 5, EKANS
+	db 7, NIDORAN_F
+	db 5, WOOPER
+	db 7, NIDORAN_M
+	db 6, HOOTHOOT
+	db 5, GASTLY
+	db 7, GASTLY
 	ELIF DEF(_SILVER)
-	; morn
-	db 6, BELLSPROUT
-	db 4, EKANS
+		; morn
+	db 5, EKANS
+	db 7, NIDORAN_F
+	db 5, WOOPER
+	db 5, HOPPIP
+	db 7, PIDGEY
+	db 7, NIDORAN_M
 	db 6, MAREEP
-	db 6, HOPPIP
-	db 6, RATTATA
-	db 4, WOOPER
-	db 4, ZUBAT
 	; day
-	db 6, BELLSPROUT
-	db 4, EKANS
+	db 5, EKANS
+	db 7, NIDORAN_F
+	db 5, WOOPER
+	db 5, MAREEP
+	db 7, PIDGEY
+	db 7, NIDORAN_M
 	db 6, MAREEP
-	db 6, HOPPIP
-	db 6, RATTATA
-	db 8, RATTATA
-	db 8, RATTATA
 	; nite
-	db 6, WOOPER
-	db 4, EKANS
-	db 6, BELLSPROUT
-	db 6, MAREEP
-	db 8, WOOPER
-	db 8, ZUBAT
-	db 8, ZUBAT
+	db 5, EKANS
+	db 7, NIDORAN_F
+	db 5, WOOPER
+	db 7, NIDORAN_M
+	db 6, HOOTHOOT
+	db 5, GASTLY
+	db 7, GASTLY
 	ENDC
 	end_grass_wildmons
 
