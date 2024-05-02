@@ -99,7 +99,7 @@ MonMenuIconPals:
 	icon_pals PURPLE, BLUE  ; GASTLY
 	icon_pals PURPLE, BLUE  ; HAUNTER
 	icon_pals PURPLE, PINK  ; GENGAR
-	icon_pals GRAY, GREEN   ; ONIX
+	icon_pals GRAY, BLUE    ; ONIX
 	icon_pals BROWN, PINK   ; DROWZEE
 	icon_pals BROWN, PINK   ; HYPNO
 	icon_pals RED, GREEN    ; KRABBY

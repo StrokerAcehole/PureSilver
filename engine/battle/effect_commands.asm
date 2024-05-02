@@ -686,7 +686,7 @@ BattleCommand_CheckObedience:
 
 	; stormbadge
 	bit STORMBADGE, [hl]
-	ld a, 70
+	ld a, 60
 	jr nz, .getlevel
 
 	; fogbadge
@@ -696,11 +696,11 @@ BattleCommand_CheckObedience:
 
 	; hivebadge
 	bit HIVEBADGE, [hl]
-	ld a, 30
+	ld a, 40
 	jr nz, .getlevel
 
 	; no badges
-	ld a, 15
+	ld a, 30
 
 .getlevel
 ; c = obedience level
