@@ -1472,6 +1472,12 @@ GentlemanGroup:
 	db 20, NOCTOWL
 	db -1 ; end
 
+    ; GENTLEMAN (6)
+	db "ERIC@", TRAINERTYPE_DVS
+	db  5, RAICHU
+			db PERFECT_DV, PERFECT_DV
+	db -1 ; end
+
 SkierGroup:
 	; SKIER (1)
 	db "ROXANNE@", TRAINERTYPE_NORMAL

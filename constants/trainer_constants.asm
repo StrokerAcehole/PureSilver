@@ -297,6 +297,7 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const GREGORY
 	const VIRGIL ; unused
 	const ALFRED
+	const ERIC
 
 	trainerclass SKIER ; 21
 	const ROXANNE
@@ -410,7 +411,7 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 
 	trainerclass SUPER_NERD ; 29
 	const ERIC_UNUSED
-	const ERIC
+	const ERICC
 	const GREGG ; unused
 	const JAY ; unused
 	const DAVE ; unused

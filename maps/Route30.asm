@@ -9,6 +9,7 @@
 	const ROUTE30_FRUIT_TREE1
 	const ROUTE30_FRUIT_TREE2
 	const ROUTE30_COOLTRAINER_F
+	const ROUTE30_GENTLEMAN
 
 Route30_MapScripts:
 	def_scene_scripts
@@ -133,6 +134,16 @@ TrainerBugCatcherDon:
 .Script:
 	opentext
 	writetext BugCatcherDonAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerGentlemanEric:
+	trainer GENTLEMAN, ERIC, EVENT_BEAT_GENTLEMAN_ERIC, GentlemanEricSeenText, GentlemanEricBeatenText, 0, .Script
+
+.Script:
+	opentext
+	writetext GentlemanEricAfterText
 	waitbutton
 	closetext
 	end
@@ -268,6 +279,25 @@ BugCatcherDonAfterText:
 	line "some more…"
 	done
 
+GentlemanEricSeenText:
+	text "Bro! Time for"
+	line "your first test!"
+	done
+
+GentlemanEricBeatenText:
+	text "Argh! You're too"
+	line "strong!"
+	done
+
+GentlemanEricAfterText:
+	text "I ran out of #"
+	line "BALLS while I was"
+	cont "catching #MON."
+
+	para "I should've bought"
+	line "some more…"
+	done
+
 Route30YoungsterText_DirectionsToMrPokemonsHouse:
 	text "MR.#MON's"
 	line "house? It's a bit"
@@ -342,3 +372,4 @@ Route30_MapEvents:
 	object_event  5, 39, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30FruitTree1, -1
 	object_event 11,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30FruitTree2, -1
 	object_event  2, 13, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30CooltrainerFScript, -1
+    object_event 15, 25, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerGentlemanEric, -1
