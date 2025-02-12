@@ -110,14 +110,12 @@ AddOutdoorSprites:
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-	ld c, MAX_OUTDOOR_SPRITES
 .loop
-	push bc
 	ld a, [hli]
+	and a
+	ret z
 	call AddSpriteGFX
-	pop bc
-	dec c
-	jr nz, .loop
+	jr .loop
 
 	ld a, [wUnusedAddOutdoorSpritesReturnValue]
 	ld c, a
