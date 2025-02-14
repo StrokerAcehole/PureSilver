@@ -644,9 +644,9 @@ popo
 	call .copy
 	ld de, wOBPals2 palette PAL_OW_TREE
 	call .copy
-	ld de, wOBPals1 palette PAL_OW_ROCK
+	ld de, wOBPals1 palette PAL_OW_BROWN
 	call .copy
-	ld de, wOBPals2 palette PAL_OW_ROCK
+	ld de, wOBPals2 palette PAL_OW_BROWN
 
 .copy
 	push hl

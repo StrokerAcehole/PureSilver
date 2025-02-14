@@ -99,6 +99,8 @@
 	const SPRITE_SILVER_TROPHY ; 5f
 	const SPRITE_CHRIS_RUN ; 67
  	const SPRITE_KRIS_RUN ; 68
+	const SPRITE_RATTATA
+	const SPRITE_RATTATA_BACK
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
