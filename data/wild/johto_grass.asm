@@ -1713,53 +1713,53 @@ JohtoGrassWildMons:
 	IF DEF(_GOLD)
 		; morn
 	db 5, EKANS
-	db 7, NIDORAN_F
-	db 5, WOOPER
-	db 5, HOPPIP
+	db 8, NIDORAN_F
+	db 7, WOOPER
+	db 6, HOPPIP
 	db 7, PIDGEY
-	db 7, NIDORAN_M
-	db 6, MAREEP
+	db 8, NIDORAN_M
+	db 8, MAREEP
 	; day
 	db 5, EKANS
-	db 7, NIDORAN_F
-	db 5, WOOPER
-	db 5, MAREEP
+	db 8, NIDORAN_F
+	db 7, WOOPER
+	db 6, HOPPIP
 	db 7, PIDGEY
-	db 7, NIDORAN_M
-	db 6, MAREEP
+	db 8, NIDORAN_M
+	db 8, MAREEP
 	; nite
 	db 5, EKANS
 	db 7, NIDORAN_F
-	db 5, WOOPER
-	db 7, NIDORAN_M
+	db 7, WOOPER
+	db 8, NIDORAN_M
 	db 6, HOOTHOOT
-	db 5, GASTLY
-	db 7, GASTLY
+	db 6, GASTLY
+	db 8, GASTLY
 	ELIF DEF(_SILVER)
 		; morn
 	db 5, EKANS
-	db 7, NIDORAN_F
-	db 5, WOOPER
-	db 5, HOPPIP
+	db 8, NIDORAN_F
+	db 7, WOOPER
+	db 6, HOPPIP
 	db 7, PIDGEY
-	db 7, NIDORAN_M
-	db 6, MAREEP
+	db 8, NIDORAN_M
+	db 8, MAREEP
 	; day
 	db 5, EKANS
-	db 7, NIDORAN_F
-	db 5, WOOPER
-	db 5, MAREEP
+	db 8, NIDORAN_F
+	db 7, WOOPER
+	db 6, HOPPIP
 	db 7, PIDGEY
-	db 7, NIDORAN_M
-	db 6, MAREEP
+	db 8, NIDORAN_M
+	db 8, MAREEP
 	; nite
 	db 5, EKANS
 	db 7, NIDORAN_F
-	db 5, WOOPER
-	db 7, NIDORAN_M
+	db 7, WOOPER
+	db 8, NIDORAN_M
 	db 6, HOOTHOOT
-	db 5, GASTLY
-	db 7, GASTLY
+	db 6, GASTLY
+	db 8, GASTLY
 	ENDC
 	end_grass_wildmons
 

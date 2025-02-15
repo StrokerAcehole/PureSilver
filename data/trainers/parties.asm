@@ -19,12 +19,12 @@ FalknerGroup:
 			db $bb, $bb ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db NO_ITEM
-			db MUD_SLAP, QUICK_ATTACK, GUST, ROOST
+			db MUD_SLAP, QUICK_ATTACK, GUST, NO_MOVE
 	db 12, HOOTHOOT
 			db $bb, $bb ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db NO_ITEM
-			db GUST, HYPNOSIS, CONFUSION, ROOST
+			db GUST, HYPNOSIS, CONFUSION, TACKLE
 	db 13, PIDGEOTTO
 			db $cc, $cc ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
@@ -130,7 +130,7 @@ Rival1Group:
 	        db $bb, $bb ; atk|def, spd|spc
 			dw $0008, $0008, $0008, $0008, $0008
 			db NO_ITEM
-	db  7, CHIKORITA
+	db  5, CHIKORITA
 			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db BERRY
@@ -142,7 +142,7 @@ Rival1Group:
 	        db $bb, $bb ; atk|def, spd|spc
 			dw $0008, $0008, $0008, $0008, $0008
 			db NO_ITEM
-	db  7, CYNDAQUIL
+	db  5, CYNDAQUIL
 			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db BERRY
@@ -154,7 +154,7 @@ Rival1Group:
 	        db $bb, $bb ; atk|def, spd|spc
 			dw $0008, $0008, $0008, $0008, $0008
 			db NO_ITEM
-	db  7, TOTODILE
+	db  5, TOTODILE
 			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
 			dw $0002, $0002, $0002, $0002, $0002 ; hp, atk, def, spd, spc
 			db BERRY

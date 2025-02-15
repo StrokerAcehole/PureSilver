@@ -23,6 +23,14 @@ CherrygroveCityFlypointCallback:
 	setflag ENGINE_FLYPOINT_CHERRYGROVE
 	endcallback
 
+MapGuide:
+	checkevent EVENT_GUIDE_GENT_VISIBLE_IN_CHERRYGROVE
+	iffalse .End
+	applymovement PLAYER, Movement_ToGuide
+	sjump CherrygroveCityGuideGent
+.End:
+	end
+
 CherrygroveCityGuideGent:
 	faceplayer
 	opentext
@@ -555,6 +563,7 @@ CherrygroveCity_MapEvents:
 	warp_event 31, 11, CHERRYGROVE_EVOLUTION_SPEECH_HOUSE, 1
 
 	def_coord_events
+	coord_event 33,  7, SCENE_CHERRYGROVECITY_NOOP, MapGuide
 	coord_event 33,  6, SCENE_CHERRYGROVECITY_MEET_RIVAL, CherrygroveRivalSceneNorth
 	coord_event 33,  7, SCENE_CHERRYGROVECITY_MEET_RIVAL, CherrygroveRivalSceneSouth
 
